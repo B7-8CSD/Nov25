@@ -16,12 +16,15 @@ output: 0
 import unittest
 
 def min_row(m,n,l):
-    """
-    m,n define size of matrix 
-    l list of m*n elements
-    """
-	pass
-
+    if h >= l: 
+        m = l + (h - l)//2
+        if (m == 0 or a[m - 1] == 0) and a[] == 1: 
+            return mid 
+        elif a[m] == 0: 
+            return first(arr, (m + 1), high) 
+        else: 
+            return first(a, l, (m - 1)) 
+    return -1
 # DO NOT TOUCH THE BELOW CODE
 class TestCommonWords(unittest.TestCase):
 
