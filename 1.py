@@ -31,7 +31,28 @@ Testcase 1: For the given string }{{}}{{{ since the length is even we just need 
 import unittest
 
 def min_rev(s):
-    pass
+    c1=0
+    c2=0
+    for i in range(0,len(s)):
+        if s[i]=="{":
+            c1=c1+1
+        else:
+            c2=c2+1
+    if c1%2==0 and c2%2==0:
+        if (c1==c2):
+            return 0
+        else:
+            r=c1/2
+            r1=c2/2
+            if r<r1:
+                return r
+            else:
+                return r1
+    else:
+        if c1<c2:
+            return c1
+        else:
+            return c2
 
 # DO NOT TOUCH THE BELOW CODE
 class TestCommonWords(unittest.TestCase):
